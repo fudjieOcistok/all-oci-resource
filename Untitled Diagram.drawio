@@ -132,6 +132,9 @@
             <mxPoint x="250" y="350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="VpjA_mbwlShb7P17Bxdb-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AIPJ0myDdVDNu3BXjuET-10" target="VpjA_mbwlShb7P17Bxdb-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="AIPJ0myDdVDNu3BXjuET-10" value="set active user and send verify email" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
           <mxGeometry x="180" y="470" width="120" height="40" as="geometry" />
         </mxCell>
@@ -187,6 +190,45 @@
         </mxCell>
         <mxCell id="VpjA_mbwlShb7P17Bxdb-16" value="is Max retry ?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="1">
           <mxGeometry x="585" y="-25" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VpjA_mbwlShb7P17Bxdb-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VpjA_mbwlShb7P17Bxdb-24" target="VpjA_mbwlShb7P17Bxdb-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VpjA_mbwlShb7P17Bxdb-24" value="User click button verify or link verify" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="600" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VpjA_mbwlShb7P17Bxdb-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VpjA_mbwlShb7P17Bxdb-25" target="VpjA_mbwlShb7P17Bxdb-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VpjA_mbwlShb7P17Bxdb-25" value="redirect to FE Page&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="730" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VpjA_mbwlShb7P17Bxdb-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VpjA_mbwlShb7P17Bxdb-26" target="VpjA_mbwlShb7P17Bxdb-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="880" />
+              <mxPoint x="360" y="800" />
+              <mxPoint x="570" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VpjA_mbwlShb7P17Bxdb-26" value="FE hit API verify email with token on query param" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="850" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VpjA_mbwlShb7P17Bxdb-27" value="Verify email success" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1010" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VpjA_mbwlShb7P17Bxdb-28" value="Token invalid or expired" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1010" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VpjA_mbwlShb7P17Bxdb-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VpjA_mbwlShb7P17Bxdb-29" target="VpjA_mbwlShb7P17Bxdb-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VpjA_mbwlShb7P17Bxdb-29" value="is success ?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="1">
+          <mxGeometry x="520" y="840" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VpjA_mbwlShb7P17Bxdb-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.457;entryY=-0.056;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VpjA_mbwlShb7P17Bxdb-29" target="VpjA_mbwlShb7P17Bxdb-27">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
